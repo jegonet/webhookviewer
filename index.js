@@ -13,7 +13,7 @@ app.get('*', (req, res) => {
 
 
 // This responds a POST request for the homepage
-app.post('*', function (req, res) {
+app.post('/HOOK', function (req, res) {
     
    console.log(req.headers);
    console.log(req.body);
