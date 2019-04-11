@@ -12,15 +12,16 @@ app.get('*', (req, res) => {
 
 
 
-// This responds a POST request for the homepage
-app.post('/HOOK', function (req, res) {
+// This responds a POST request for the homepage (Cambio para publicación)
+app.post('*', function (req, res) {
     
    console.log(req.headers);
    console.log(req.body);
 
-    res.write("Hola");
+    res.write("Hola Post Hook");
     res.end()
 
 })
+
 
 module.exports = app
